@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+
+/* General */
+
+html {
+    background-color: #f3dfc1;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Charm';
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+/* Articles */
+
+#news {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: stretch;
+}
+
+article {
+    background-color: #f3cea1;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 4rem 0rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+article p:nth-child(1) {
+    min-height: 4rem;
+}
+
+article p:nth-child(2) {
+    margin: 1rem 0.5rem;
+}
+
+article p:nth-child(3) {
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
+/* Image in article */
+
+img {
+    width: 100%;
+    min-height: 18rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+img:hover {
+    opacity: 0.4;
+}
+
+/* Links */
+
+a {
+    width: max-content;
+    background-color: black;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* Filter */
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+input[type="submit"] {
+    min-width: 6rem;
+    min-height: 2.25rem;
+    background-color: #d9b650;
+    border: none;
+    border-radius: 4rem;
+}
+
+.filter {
+    min-width: 10rem;
+    padding: 0.5rem 0.5rem;
+    border: #f3cea1 2px solid;
+}
+
+.inputDate label {
+    font-weight: 600;
+}
+
+.inputDate {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
